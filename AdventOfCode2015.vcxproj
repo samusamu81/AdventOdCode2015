@@ -144,6 +144,7 @@
     <ClInclude Include="hpp\smmConsts.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdventOfCode1_15.cpp" />
     <ClCompile Include="cpp\AoC01_15.cpp" />
     <ClCompile Include="cpp\AoC02_15.cpp" />
     <ClCompile Include="cpp\AoC03_15.cpp" />

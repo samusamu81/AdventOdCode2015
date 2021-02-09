@@ -44,6 +44,9 @@
     <ClCompile Include="cpp\AoC02_15.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="AdventOfCode1_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="inp\Test03_15.txt">

@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="hpp\AoC2015.hpp" />
+    <ClInclude Include="hpp\MD5.hpp" />
     <ClInclude Include="hpp\smmComuni.hpp" />
     <ClInclude Include="hpp\smmConsts.hpp" />
   </ItemGroup>
@@ -148,7 +149,13 @@
     <ClCompile Include="cpp\AoC01_15.cpp" />
     <ClCompile Include="cpp\AoC02_15.cpp" />
     <ClCompile Include="cpp\AoC03_15.cpp" />
+    <ClCompile Include="cpp\AoC04_15.cpp" />
+    <ClCompile Include="cpp\AoC05_15.cpp" />
+    <ClCompile Include="cpp\AoC06_15.cpp" />
+    <ClCompile Include="cpp\AoC07_15.cpp" />
+    <ClCompile Include="cpp\AoC08_15.cpp" />
     <ClCompile Include="cpp\AoC2015.cpp" />
+    <ClCompile Include="cpp\MD5.cpp" />
     <ClCompile Include="cpp\smmComuni.cpp" />
     <ClCompile Include="cpp\smmConsts.cpp" />
   </ItemGroup>
@@ -156,6 +163,10 @@
     <Text Include="inp\Test01_15.txt" />
     <Text Include="inp\Test02_15.txt" />
     <Text Include="inp\Test03_15.txt" />
+    <Text Include="inp\Test05_15.txt" />
+    <Text Include="inp\Test06_15.txt" />
+    <Text Include="inp\Test07_15.txt" />
+    <Text Include="inp\Test08_15.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

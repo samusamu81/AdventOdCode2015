@@ -24,6 +24,9 @@
     <ClInclude Include="hpp\AoC2015.hpp">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="hpp\MD5.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cpp\AoC03_15.cpp">
@@ -47,6 +50,24 @@
     <ClCompile Include="AdventOfCode1_15.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\AoC04_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\AoC05_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\AoC06_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\AoC07_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\AoC08_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\MD5.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="inp\Test03_15.txt">
@@ -56,6 +77,18 @@
       <Filter>File di risorse</Filter>
     </Text>
     <Text Include="inp\Test02_15.txt">
+      <Filter>File di risorse</Filter>
+    </Text>
+    <Text Include="inp\Test05_15.txt">
+      <Filter>File di risorse</Filter>
+    </Text>
+    <Text Include="inp\Test06_15.txt">
+      <Filter>File di risorse</Filter>
+    </Text>
+    <Text Include="inp\Test07_15.txt">
+      <Filter>File di risorse</Filter>
+    </Text>
+    <Text Include="inp\Test08_15.txt">
       <Filter>File di risorse</Filter>
     </Text>
   </ItemGroup>

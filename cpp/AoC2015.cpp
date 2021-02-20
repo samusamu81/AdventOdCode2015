@@ -1,6 +1,6 @@
 #include <map>
 #include <iostream>
-#include "..\hpp\AoC2015.hpp"
+#include "../hpp/AoC2015.hpp"
 
 int main(int argc, char* argv[])
 {
@@ -31,11 +31,13 @@ int main(int argc, char* argv[])
     //myAnsw = AoC06_15();
     //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
 
-
-
-    std::cout << "Problema 7 Anno 2015:" << std::endl;
-    myAnsw = AoC07_15();
-    std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
+    //std::cout << "Problema 7 Anno 2015:" << std::endl;
+    //myAnsw = AoC07_15();
+    //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
     
+
+    std::cout << "Problema 8 Anno 2015:" << std::endl;
+    myAnsw = AoC08_15();
+    std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
     return 0;
 }

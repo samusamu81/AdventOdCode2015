@@ -1,7 +1,9 @@
 #include <map>
+#include <vector>
 #include <string>
 #include <iostream>
 #include "../hpp/AoC2015.hpp"
+#include "../hpp/smmComuni.hpp"
 
 int main(int argc, char* argv[])
 {
@@ -52,8 +54,14 @@ int main(int argc, char* argv[])
     //myAnswStr = AoC11_15();
     //std::cout << myAnswStr.first << "\t" << myAnswStr.second << std::endl << std::endl;
 
-    std::cout << "Problema 12 Anno 2015:" << std::endl;
-    myAnsw = AoC12_15();
+    //std::cout << "Problema 12 Anno 2015:" << std::endl;
+    //myAnsw = AoC12_15();
+    //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
+
+    std::cout << "Problema 13 Anno 2015:" << std::endl;
+    myAnsw = AoC13_15();
     std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
+
+
     return 0;
 }

@@ -161,7 +161,6 @@ std::pair<long long int, long long int> AoC12_15(std::string fileName)
 	std::string aStr;
 	std::vector<std::string> fContent = Parser(fileName, ',', std::regex("[^+\\-0-9]*"));//whatever is not one of those!
 	std::vector<std::pair<size_t, size_t>> myPos;
-	size_t nextStart;
 	long long int dummy = 0;
 	std::vector<long long int> vInt;
 	

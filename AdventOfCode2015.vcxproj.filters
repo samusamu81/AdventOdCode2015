@@ -77,6 +77,9 @@
     <ClCompile Include="cpp\AoC12_15.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\AoC13_15.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="inp\Test03_15.txt">
@@ -101,6 +104,9 @@
       <Filter>File di risorse</Filter>
     </Text>
     <Text Include="inp\Test12_15.txt">
+      <Filter>File di risorse</Filter>
+    </Text>
+    <Text Include="inp\Test13_15.txt">
       <Filter>File di risorse</Filter>
     </Text>
   </ItemGroup>

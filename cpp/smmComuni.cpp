@@ -190,6 +190,7 @@ std::ostream& operator<< (std::ostream& out, const std::vector<bool>& v)
 }
 
 
+
 //template <typename T>
 //std::vector<T> const ExtractColumn(std::vector<std::vector<T>> myMatr, unsigned int colNum)
 //{

@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iterator> // needed for std::ostream_iterator
 #include <regex>
+#include <deque>
 #include <set>
 #include <sstream>
 #include <string>
@@ -25,7 +26,7 @@ std::vector<std::string> Parser(std::istream* is, char delimiter, std::regex exc
 std::vector<std::string> Parser(std::string fileName, char delimiter, std::regex excludeMe = std::regex(".^")); //default regex never match
 
 
-std::pair<size_t, size_t> find_matching_item(std::string searchMe, std::string findMe, char opener, char closer, size_t startPos = 0);
+//std::pair<size_t, size_t> find_matching_item(std::string searchMe, std::string findMe, char opener, char closer, size_t startPos = 0);
 
 std::vector<std::string> Split(std::string input, std::string delimiter);
 
@@ -98,4 +99,78 @@ inline std::vector<T> VectorConverter(std::vector<std::string> const & rVal, T d
 		myAnsw.push_back(dummy);
 	}
 	return myAnsw;
+}
+
+
+template <typename T>
+inline std::vector<std::vector<T>> GiveFactorial(std::vector <T> inp)
+{
+	//give all possible arrangment
+	std::deque<T> lastShuffle;
+	size_t i;
+	std::vector<T> v2;
+	std::vector<std::vector<T>> myAnsw, myPartAnsw;
+	T anEl;
+	if (inp.size() == 1)
+	{
+		myAnsw.push_back(inp);
+	}
+	else
+	{
+		anEl = inp.back();
+		inp.pop_back();
+		myPartAnsw = GiveFactorial(inp);	//all elements but last;
+		for (auto const & v1 : myPartAnsw)	//for each vector
+		{
+			lastShuffle.clear();
+			lastShuffle.insert(lastShuffle.begin(), v1.begin(), v1.end());
+			lastShuffle.push_back(anEl);
+			for (i = 0; i < inp.size() + 1; ++i)	//+1: before every element and after last!
+			{
+				v2.clear();
+				v2.insert(v2.begin(), lastShuffle.begin(), lastShuffle.end());
+				myAnsw.push_back(v2);
+
+				lastShuffle.push_front(lastShuffle.back());//add the same at the beginning
+				lastShuffle.pop_back();
+			}
+		}
+	}
+	return myAnsw;
+}
+
+template <typename T>
+inline std::vector<std::vector<T>> GiveCircularFactorial(std::vector <T> inp, bool RepeatFirstAtEnd)
+{
+
+	//return factorial "around the table" (relative order, so ABC = BCA = CAB)
+	//if RepeatFirstAtEnd, ABC becomes ABCA (easier to check for "neighbours")
+
+	std::vector<std::vector<T>> myAnsw;
+	
+	T lastEl = inp.back();
+
+
+	if (inp.size() == 1)
+	{
+		myAnsw.push_back(std::vector<T>());	//an empty vector!
+	}
+	else
+	{
+		inp.pop_back();
+		myAnsw = GiveFactorial(inp);
+	}
+	
+	for (std::vector<T> & v : myAnsw)
+		v.push_back(lastEl);
+	if (RepeatFirstAtEnd)
+	{
+		for (std::vector<T>& v : myAnsw)
+		{
+			std::reverse(v.begin(), v.end());
+			v.push_back(lastEl);
+		}
+	}
+	return myAnsw;
+
 }

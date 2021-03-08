@@ -10,3 +10,7 @@ std::pair<long long int, long long int> AoC05_15(std::string myFileName = ".\\in
 std::pair<long long int, long long int> AoC06_15(std::string myFileName = ".\\inp\\Test06_15.txt");
 std::pair<long long int, long long int> AoC07_15(std::string myFileName = ".\\inp\\Test07_15.txt");
 std::pair<long long int, long long int> AoC08_15(std::string myFileName = ".\\inp\\Test08_15.txt");
+//std::pair<long long int, long long int> AoC09_15(std::string myFileName = ".\\inp\\Test09_15.txt");
+std::pair<long long int, long long int> AoC10_15(std::string sequence = "1113122113");
+std::pair<std::string, std::string> AoC11_15(std::string sequence = "hxbxwxba");
+std::pair<long long int, long long int> AoC12_15(std::string sequence = ".\\inp\\Test12_15.txt");

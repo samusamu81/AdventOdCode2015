@@ -1,7 +1,11 @@
-#include "..\hpp\smmComuni.hpp"
+#ifndef DEBUG
+#define DEBUG
+#endif
+
 #include <sstream>
 #include <fstream>
-
+#include <iostream>
+#include "..\hpp\smmComuni.hpp"
 std::string CleanWhiteSpace(std::string str)
 {
 	std::regex isWhiteSpace(" ");
@@ -75,6 +79,34 @@ std::vector<std::string> Parser(std::string fileName, char delimiter, std::regex
 	return answ;
 }
 
+std::vector<std::string> Split(std::string input, std::string delimiter)
+{
+	
+	//std::reverse(delimiter.begin(), delimiter.end());
+	//both reversed
+	std::vector<std::string> aV;
+	size_t found_p, cut_place;
+	do
+	{
+		found_p = input.rfind(delimiter);
+		
+#ifdef DEBUG
+		if (found_p == std::string::npos)
+		{
+			std::cout << "Some debug text;" << std::endl;
+		}
+#endif
+		cut_place = (found_p != std::string::npos) ? found_p + delimiter.length() : 0;//starting point of new string
+		found_p = (found_p != std::string::npos) ? found_p : 0;//ending point of old string
+		aV.push_back(input.substr(cut_place));
+		if (aV.back().length() == 0) aV.pop_back();
+		input = input.substr(0, found_p);
+	} while (input.length() != 0);
+	
+	std::reverse(aV.begin(), aV.end());
+	return aV;
+}
+
 void multiLineMerger(std::istream* is, std::ostream* os, char delimiter)
 {
 
@@ -145,7 +177,7 @@ std::ostream& operator<< (std::ostream& out, const std::vector<bool>& v)
 	for (auto const& itV : v)
 	{
 		c = itV ? smmConst::trueSym : smmConst::falseSym;
-		preOut << c << smmConst::separator;;
+		preOut << c << smmConst::separator;
 	}
 
 	if (!v.empty())
@@ -156,6 +188,8 @@ std::ostream& operator<< (std::ostream& out, const std::vector<bool>& v)
 	out << aStr;
 	return out;
 }
+
+
 //template <typename T>
 //std::vector<T> const ExtractColumn(std::vector<std::vector<T>> myMatr, unsigned int colNum)
 //{
@@ -166,5 +200,4 @@ std::ostream& operator<< (std::ostream& out, const std::vector<bool>& v)
 //	return myAnsw;
 //
 //}
-
 

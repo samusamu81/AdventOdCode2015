@@ -24,6 +24,11 @@ std::vector<std::string> lineParser(std::string fileName);
 std::vector<std::string> Parser(std::istream* is, char delimiter, std::regex excludeMe = std::regex(".^")); //default regex never match
 std::vector<std::string> Parser(std::string fileName, char delimiter, std::regex excludeMe = std::regex(".^")); //default regex never match
 
+
+std::pair<size_t, size_t> find_matching_item(std::string searchMe, std::string findMe, char opener, char closer, size_t startPos = 0);
+
+std::vector<std::string> Split(std::string input, std::string delimiter);
+
 void multiLineMerger(std::istream* is, std::ostream* os, char delimiter = ' ' );
 void multiLineMerger(std::string iFileName, std::string oFileName, char delimiter = ' '); //default regex never match
 

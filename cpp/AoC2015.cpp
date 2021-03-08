@@ -1,11 +1,12 @@
 #include <map>
+#include <string>
 #include <iostream>
 #include "../hpp/AoC2015.hpp"
 
 int main(int argc, char* argv[])
 {
     std::pair <long long int, long long int> myAnsw;
-    
+    std::pair <std::string, std::string> myAnswStr;
 
     //std::cout << "Problema 1 Anno 2015:" << std::endl;
     //myAnsw = AoC01_15();
@@ -36,8 +37,23 @@ int main(int argc, char* argv[])
     //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
     
 
-    std::cout << "Problema 8 Anno 2015:" << std::endl;
-    myAnsw = AoC08_15();
+    //std::cout << "Problema 8 Anno 2015:" << std::endl;
+    //myAnsw = AoC08_15();
+    //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
+
+
+    //***************************************MANCA PROBLEMA 9********************************
+
+    //std::cout << "Problema 10 Anno 2015:" << std::endl;
+    //myAnsw = AoC10_15();
+    //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
+        
+    //std::cout << "Problema 11 Anno 2015:" << std::endl;
+    //myAnswStr = AoC11_15();
+    //std::cout << myAnswStr.first << "\t" << myAnswStr.second << std::endl << std::endl;
+
+    std::cout << "Problema 12 Anno 2015:" << std::endl;
+    myAnsw = AoC12_15();
     std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
     return 0;
 }

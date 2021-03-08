@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -154,6 +154,9 @@
     <ClCompile Include="cpp\AoC06_15.cpp" />
     <ClCompile Include="cpp\AoC07_15.cpp" />
     <ClCompile Include="cpp\AoC08_15.cpp" />
+    <ClCompile Include="cpp\AoC10_15.cpp" />
+    <ClCompile Include="cpp\AoC11_15.cpp" />
+    <ClCompile Include="cpp\AoC12_15.cpp" />
     <ClCompile Include="cpp\AoC2015.cpp" />
     <ClCompile Include="cpp\MD5.cpp" />
     <ClCompile Include="cpp\smmComuni.cpp" />
@@ -167,6 +170,7 @@
     <Text Include="inp\Test06_15.txt" />
     <Text Include="inp\Test07_15.txt" />
     <Text Include="inp\Test08_15.txt" />
+    <Text Include="inp\Test12_15.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

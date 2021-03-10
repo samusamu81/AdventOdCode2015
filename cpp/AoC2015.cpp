@@ -58,8 +58,12 @@ int main(int argc, char* argv[])
     //myAnsw = AoC12_15();
     //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
 
-    std::cout << "Problema 13 Anno 2015:" << std::endl;
-    myAnsw = AoC13_15();
+    //std::cout << "Problema 13 Anno 2015:" << std::endl;
+    //myAnsw = AoC13_15();
+    //std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
+
+    std::cout << "Problema 14 Anno 2015:" << std::endl;
+    myAnsw = AoC14_15();
     std::cout << myAnsw.first << "\t" << myAnsw.second << std::endl << std::endl;
 
 

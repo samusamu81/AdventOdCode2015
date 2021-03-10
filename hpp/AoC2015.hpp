@@ -15,3 +15,4 @@ std::pair<long long int, long long int> AoC10_15(std::string sequence = "1113122
 std::pair<std::string, std::string> AoC11_15(std::string sequence = "hxbxwxba");
 std::pair<long long int, long long int> AoC12_15(std::string sequence = ".\\inp\\Test12_15.txt");
 std::pair<long long int, long long int> AoC13_15(std::string sequence = ".\\inp\\Test13_15.txt");
+std::pair<long long int, long long int> AoC14_15(long long int TAU_RACE = 2503, std::string fileName = ".\\inp\\Test14_15.txt");

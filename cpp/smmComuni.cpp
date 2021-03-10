@@ -1,6 +1,3 @@
-#ifndef DEBUG
-#define DEBUG
-#endif
 
 #include <sstream>
 #include <fstream>
